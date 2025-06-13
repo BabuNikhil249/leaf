@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# 🌿 Leaf Now - Online Plant Nursery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Leaf Now is a full-stack web application for an online plant nursery. Customers can browse plant products, search, add to cart, and place orders. Admins can manage the product list with features to add, delete, and update products. Built using React.js for the frontend and Spring Boot with MySQL for the backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+### 🌐 Frontend
+- React.js
+- Axios (for API requests)
+- HTML5, CSS3, JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔧 Backend
+- Java 17
+- Spring Boot 3.4.4
+- Spring Data JPA
+- RESTful APIs
+- MySQL Database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📦 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 👤 User Features
+- View all plant products
+- Search plants by name
+- Add products to cart
+- Increase/decrease quantity
+- Place orders
+- User signup and login
 
-### `npm run build`
+### 🔐 Admin Features
+- View all products
+- Add new products
+- Delete products (restricted if product has orders)
+- Update product details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend (Spring Boot)
 
-### `npm run eject`
+com.leafnow
+├── controller # REST controllers for user, product, order
+├── dto # Data transfer objects (UserDTO, ProductDTO)
+├── model # Entity classes (User, Product, Order)
+├── repository # Spring JPA repositories
+├── service # Business logic implementation
+├── util # Utility classes (response maps)
+└── LeafNowApplication.java
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend (React)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+src/
+├── components/
+│ ├── Product.js # Show product list
+│ ├── Cart.js # Cart and order placement
+│ ├── AdminProducts.js # Admin product management
+│ └── Auth/
+│ ├── Login.js
+│ └── Signup.js
+├── App.js # Routing and layout
+└── index.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Setup Instructions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ✅ Prerequisites
+- Node.js & npm
+- Java 17+
+- Maven
+- MySQL Server
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🖥️ Backend Setup (Spring Boot)
 
-### Analyzing the Bundle Size
+1. **Clone the backend repository**
+   ```bash
+   git clone https://github.com/your-username/leaf-now-backend.git
+   cd leaf-now-backend
+2. **Configure MySQL in application.properties**
+   ```bash
+    spring.datasource.url=jdbc:mysql://localhost:3306/leaf
+    spring.datasource.username=root
+    spring.datasource.password=yourpassword
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+3. **Run the backend**
+   ```bash
+   ./mvnw spring-boot:run
+   The backend will start on: http://localhost:8080
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ---
 
-### Making a Progressive Web App
+### 🖥️ Frontend Setup (Reactjs)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Clone the frontend repository**
+```bash
+git clone https://github.com/your-username/leaf-frontend.git
+cd leaf-frontend
+npm install
+npm start
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
