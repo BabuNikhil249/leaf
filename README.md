@@ -42,7 +42,7 @@ Leaf is a full-stack web application for an online plant nursery. Customers can 
 
 ### Backend (Spring Boot)
 
-com.leaf
+com.leaf <br/>
 ├── controller # REST controllers for user, product, order  <br/>
 ├── dto # Data transfer objects (UserDTO, ProductDTO) <br/>
 ├── model # Entity classes (User, Product, Order) <br/>
@@ -54,16 +54,16 @@ com.leaf
 
 ### Frontend (React)
 
-src/
-├── components/
-│ ├── Product.js # Show product list
-│ ├── Cart.js # Cart and order placement
-│ ├── AdminProducts.js # Admin product management
-│ └── Auth/
-│ ├── Login.js
-│ └── Signup.js
-├── App.js # Routing and layout
-└── index.js
+src/ <br/>
+├── components/ <br/>
+│ ├── Product.js # Show product list <br/>
+│ ├── Cart.js # Cart and order placement <br/>
+│ ├── AdminProducts.js # Admin product management <br/>
+│ └── Auth/ <br/>
+│ ├── Login.js <br/>
+│ └── Signup.js <br/>
+├── App.js # Routing and layout <br/>
+└── index.js <br/>
 
 
 ---
