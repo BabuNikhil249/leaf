@@ -1,6 +1,6 @@
-# 🌿 Leaf Now - Online Plant Nursery
+# 🌿 Leaf - Online Plant Nursery
 
-Leaf Now is a full-stack web application for an online plant nursery. Customers can browse plant products, search, add to cart, and place orders. Admins can manage the product list with features to add, delete, and update products. Built using React.js for the frontend and Spring Boot with MySQL for the backend.
+Leaf is a full-stack web application for an online plant nursery. Customers can browse plant products, search, add to cart, and place orders. Admins can manage the product list with features to add, delete, and update products. Built using React.js for the frontend and Spring Boot with MySQL for the backend.
 
 ---
 
@@ -42,14 +42,14 @@ Leaf Now is a full-stack web application for an online plant nursery. Customers 
 
 ### Backend (Spring Boot)
 
-com.leafnow
+com.leaf
 ├── controller # REST controllers for user, product, order
 ├── dto # Data transfer objects (UserDTO, ProductDTO)
 ├── model # Entity classes (User, Product, Order)
 ├── repository # Spring JPA repositories
 ├── service # Business logic implementation
 ├── util # Utility classes (response maps)
-└── LeafNowApplication.java
+└── LeafApplication.java
 
 
 ### Frontend (React)
@@ -82,8 +82,8 @@ src/
 
 1. **Clone the backend repository**
    ```bash
-   git clone https://github.com/your-username/leaf-now-backend.git
-   cd leaf-now-backend
+   git clone https://github.com/your-username/leaf-backend.git
+   cd leaf-backend
 2. **Configure MySQL in application.properties**
    ```bash
     spring.datasource.url=jdbc:mysql://localhost:3306/leaf
