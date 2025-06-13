@@ -43,12 +43,12 @@ Leaf is a full-stack web application for an online plant nursery. Customers can 
 ### Backend (Spring Boot)
 
 com.leaf
-├── controller # REST controllers for user, product, order
-├── dto # Data transfer objects (UserDTO, ProductDTO)
-├── model # Entity classes (User, Product, Order)
-├── repository # Spring JPA repositories
-├── service # Business logic implementation
-├── util # Utility classes (response maps)
+├── controller # REST controllers for user, product, order  <br/>
+├── dto # Data transfer objects (UserDTO, ProductDTO) <br/>
+├── model # Entity classes (User, Product, Order) <br/>
+├── repository # Spring JPA repositories <br/>
+├── service # Business logic implementation <br/>
+├── util # Utility classes (response maps) <br/>
 └── LeafApplication.java
 
 
